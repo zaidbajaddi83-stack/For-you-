@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pour Ghizlane 💖</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="music" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- شاشة البداية -->
+    <div id="start-screen">
+        <h1 class="main-title">Pour toi, <span>Ghizlane</span></h1>
+        <button id="startBtn">Ouvrir Votre cadeau ✨</button>
+    </div>
+
+    <!-- مشهد الكيك والهدية -->
+    <div id="animation-zone" style="display:none;">
+        <div id="cake-box" class="step">
+            <div class="cake-3d">🎂</div>
+            <p>Joyeux Anniversaire!</p>
+        </div>
+        
+        <div id="gift-box" class="step" style="display:none;">
+            <div class="gift-icon">🎁</div>
+            <p>Clique pour ouvrir...</p>
+        </div>
+    </div>
+
+    <!-- ألبوم الصور الاحترافي (5 صور) -->
+    <div id="album-scene" style="display:none;">
+        <div class="hearts-container">
+            <!-- استبدل الرابط بـ صورك الحقيقية هنا -->
+            <div class="heart-photo" style="background-image: url('https://picsum.photos/401');"></div>
+            <div class="heart-photo" style="background-image: url('https://picsum.photos/402');"></div>
+            <div class="heart-photo" style="background-image: url('https://picsum.photos/403');"></div>
+            <div class="heart-photo" style="background-image: url('https://picsum.photos/404');"></div>
+            <div class="heart-photo" style="background-image: url('https://picsum.photos/405');"></div>
+        </div>
+        <button id="nextToLetter">Lire ton message 💌</button>
+    </div>
+
+    <!-- الرسالة الأصلية (لا تغيير) -->
+    <div id="main-scene" style="display:none;">
+        <div class="letter-box">
+            <h2 class="letter-header">Ghizlane 💖</h2>
+            <p id="typing-text"></p>
+            <div id="signature">Zaid Bajaddi</div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
